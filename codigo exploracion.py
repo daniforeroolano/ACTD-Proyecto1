@@ -14,7 +14,7 @@ df_data = pd.DataFrame(data['features'])
 df = pd.concat([df_data, pd.DataFrame({'Target': targets['Target']})], axis=1)
 
 # Especificar las variables que queremos discretizar
-variables_a_discretizar = ['Previous qualification (grade)', 'Admission grade','Unemployment rate','Inflation rate','GDP']
+variables_a_discretizar = ['Previous qualification (grade)', 'Admission grade','Unemployment rate','Inflation rate','GDP','Curricular units 2nd sem (grade)','Curricular units 1st sem (grade)']
 
 # Especificicar el número de intervalos deseados para cada variable
 num_bins = 4
