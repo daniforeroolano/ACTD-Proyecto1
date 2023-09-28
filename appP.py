@@ -479,4 +479,4 @@ def realizar_inferencia(n_clicks, S, T, R, G, AC, W, AE, Y, AF, Z, D, P, Q):
         return f"Error durante la inferencia: {str(e)}"
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host = "0.0.0.0", debug=True)
